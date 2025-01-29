@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Secure Bank</title>
+    <link rel="stylesheet" href="../../pages/page3/assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">SerranoBank</div>
+        <nav>
+            <ul>
+                <li><a href="../../index.html" class="nav-btn">Home</a></li>
+                <li><a href="../page1/index.html" class="nav-btn">Services</a></li>
+                <li><a href="../page2/index.html" class="nav-btn">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="login-container" id="login-section">
+        <h1>Login to SecureBank</h1>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+    </section>
+
+    <section class="dashboard-container" id="dashboard" style="display: none;">
+        <h1>Welcome, <span id="user-name"></span>!</h1>
+        
+        <p>Your Balance: <span id="balance-amount">₱0.00</span></p>
+
+        <p>Select a banking action below:</p>
+
+        <div class="actions">
+            <button class="action-btn" onclick="showSection('deposit')">Deposit</button>
+            <button class="action-btn" onclick="showSection('withdraw')">Withdraw</button>
+            <button class="action-btn" onclick="showSection('history')">Transaction History</button>
+        </div>
+
+        <button class="action-btn" onclick="exit()">Exit</button>
+
+        <div class="transaction-box" id="deposit-box" style="display: none;">
+            <h2>Deposit Money</h2>
+            <input type="number" id="deposit-amount" placeholder="Enter amount">
+            <button class="action-btn" onclick="depositMoney()">Deposit</button>
+        </div>
+
+        <div class="transaction-box" id="withdraw-box" style="display: none;">
+            <h2>Withdraw Money</h2>
+            <input type="number" id="withdraw-amount" placeholder="Enter amount">
+            <button class="action-btn" onclick="withdrawMoney()">Withdraw</button>
+        </div>
+
+        <div class="transaction-box" id="history-box" style="display: none;">
+            <h2>Transaction History</h2>
+            <ul id="transaction-list"></ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 SecureBank. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../page3/assets/js/scripts.js"></script>
+</body>
+</html>
