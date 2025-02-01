@@ -78,7 +78,7 @@ function withdrawMoney() {
 }
 
 function updateBalance() {
-    document.getElementById("balance-amount").innerText = `₱${balance.toFixed(2)}`;
+    document.getElementById("balance-amount").innerText = `₱${balance.toFixed(2)}`; 
 }
 
 function updateHistory() {
