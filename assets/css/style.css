@@ -13,7 +13,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #004085;
+    background-color: #610f09;
     color: white;
 }
 
@@ -45,12 +45,12 @@ nav ul li {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    background: #0056b3;
+    background: #610f09;
     border: none;
 }
 
 .nav-btn:hover {
-    background: #003d82;
+    background: #ffcc00;
 }
 
 .login-btn {
@@ -66,8 +66,7 @@ nav ul li {
 .hero {
     text-align: center;
     padding: 100px 20px;
-    background: url('https://source.unsplash.com/1600x900/?finance,bank') no-repeat center center/cover;
-    color: white;
+    color: #610f09;
 }
 
 .hero h1 {
@@ -111,11 +110,61 @@ nav ul li {
     color: #004085;
 }
 
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 20px;
+    background-color: #f4f4f4;
+    gap: 20px;
+    text-align: center;
+}
+
+/* Common Style for All Features */
+.feature {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 30%;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+}
+
+/*  Fast Transfers */
+.fast-transfers h2,
+.fast-transfers p {
+    color: #610f09;
+}
+
+/* 24/7 Support */
+.support h2,
+.support p {
+    color: #610f09;
+}
+
+/*  Secure Transactions */
+.secure-transactions h2,
+.secure-transactions p {
+    color: #610f09;
+}
+
+/* Feature Images */
+.feature-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background: #004085;
+    background: #610f09;
     color: white;
 }
 
@@ -123,9 +172,9 @@ footer {
 .logo {
     font-size: 24px;
     font-weight: bold;
-    transition: color 0.3s ease; /* Smooth transition for color change */
+    transition: color 0.3s ease;
 }
 
 .logo:hover {
-    color: hsl(4, 63%, 21%); /* Change color on hover */
+    color: hsl(54, 92%, 47%);
 }
